@@ -1,7 +1,7 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: todo
+  namespace: todo-daniel
   name: todo-proxy
   labels:
     todo-app-deployment: todo-proxy
@@ -23,7 +23,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: todo-proxy
-        image: gravitonian/todo-proxy:1.0
+        image: danielvadillojerez/todo-proxy:1.0
         ports:
         - containerPort: 80
         resources:

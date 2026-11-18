@@ -1,7 +1,7 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: todo
+  namespace: todo-daniel
   name: todo-storage-service
   labels:
     todo-app-deployment: todo-storage-service
@@ -22,7 +22,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - image: gravitonian/todo-storage-service:1.0
+      - image: danielvadillojerez/todo-storage-service:1.0
         name: todo-storage-service
         envFrom:
           - configMapRef:

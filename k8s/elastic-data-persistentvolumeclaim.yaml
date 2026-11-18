@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  namespace: todo
+  namespace: todo-daniel
   name: elastic-data-pvc
 spec:
   storageClassName: manual

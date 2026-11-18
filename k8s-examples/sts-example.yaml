@@ -11,7 +11,7 @@ spec:
  accessModes:
    - ReadWriteOnce
  hostPath:
-   path: "{your-path-to}/kubedata/v0"
+   path: "/home/dvadillo/kubedata/v0"
  
 ---
  

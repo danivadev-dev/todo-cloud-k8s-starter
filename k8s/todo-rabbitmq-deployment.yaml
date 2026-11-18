@@ -1,7 +1,7 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: todo
+  namespace: todo-daniel
   name: todo-rabbitmq
   labels:
     todo-app-deployment: todo-rabbitmq
@@ -55,4 +55,3 @@ spec:
             initialDelaySeconds: 10
             periodSeconds: 60
             timeoutSeconds: 10
-
