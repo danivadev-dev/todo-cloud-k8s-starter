@@ -25,7 +25,7 @@ spec:
       initContainers:
       - name: init-rabbitmq
         image: busybox
-        command: ['sh', '-c', 'until nslookup todo-rabbitmq; do echo waiting for RabbitMQ; sleep 2; done;']
+        command: ['sh', '-c', 'until nslookup todo-rabbitmq.todo-daniel.svc.cluster.local.; do echo waiting for RabbitMQ; sleep 2; done;']
       containers:
       - image: danielvadillojerez/todo-cache-ingestion:1.0
         name: todo-cache-ingestion

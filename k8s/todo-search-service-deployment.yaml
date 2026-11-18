@@ -24,7 +24,7 @@ spec:
       initContainers:
       - name: init-elastic
         image: busybox
-        command: ['sh', '-c', 'until nslookup todo-elastic; do echo waiting for ElasticSearch; sleep 2; done;']
+        command: ['sh', '-c', 'until nslookup todo-elastic.todo-daniel.svc.cluster.local.; do echo waiting for ElasticSearch; sleep 2; done;']
       containers:
       - name: todo-search-service
         image: danielvadillojerez/todo-search-service:1.0
