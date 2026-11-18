@@ -4,7 +4,7 @@ metadata:
   namespace: todo-daniel
   name: postgres-data-pvc-daniel
 spec:
-  storageClassName: manual
+  # Using default dynamic storage provisioner
   accessModes:
   - ReadWriteOnce
   resources:
