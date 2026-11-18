@@ -52,4 +52,4 @@ spec:
       volumes:
       - name: elastic-data
         persistentVolumeClaim:
-          claimName: elastic-data-pv-danielc
+          claimName: elastic-data-pvc-daniel

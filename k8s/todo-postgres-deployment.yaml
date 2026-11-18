@@ -65,4 +65,4 @@ spec:
       volumes:
       - name: postgres-data
         persistentVolumeClaim:
-          claimName: postgres-data-pv-danielc
+          claimName: postgres-data-pvc-daniel
